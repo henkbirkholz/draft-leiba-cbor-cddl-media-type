@@ -6,7 +6,7 @@ docname: draft-leiba-cbor-cddl-media-type-latest
 stand_alone: true
 ipr: trust200902
 area: ART
-wg: COSE
+wg: CBOR 
 kw: Internet-Draft
 cat: std
 submissiontype: IETF
