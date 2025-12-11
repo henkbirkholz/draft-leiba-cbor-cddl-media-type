@@ -1,0 +1,216 @@
+
+
+
+
+COSE                                                            B. Leiba
+Internet-Draft                                    Futurewei Technologies
+Intended status: Standards Track                             H. Birkholz
+Expires: 14 June 2026                                     Fraunhofer SIT
+                                                        11 December 2025
+
+
+   IANA Registrations for the Concise Data Definition Language (CDDL)
+                draft-leiba-cbor-cddl-media-type-latest
+
+Abstract
+
+   When the Concise Data Definition Language (CDDL) was defined, media-
+   type, content-format, CBOR tag, and a file name extension were not
+   defined for CDDL Definitions in RFC 8610.  Correspondingly, this
+   documents specifies a media type (including a file name extension), a
+   content format, and a CBOR tag for CDDL Definitions as specified in
+   RFC 8610.
+
+Discussion Venues
+
+   This note is to be removed before publishing as an RFC.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/henkbirkholz/draft-leiba-cbor-cddl-media-type.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 14 June 2026.
+
+Copyright Notice
+
+   Copyright (c) 2025 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  IANA Considerations
+     2.1.  Media Type
+     2.2.  CoAP Content Format
+     2.3.  CBOR Tag
+   3.  References
+     3.1.  Normative References
+     3.2.  Informative References
+   Authors' Addresses
+
+1.  Introduction
+
+   When the Concise Data Definition Language (CDDL) was defined, media-
+   type, content-format, CBOR tag, and a file name extension were not
+   defined for CDDL Definitions in [RFC8610].  Correspondingly, this
+   documents specifies a media type (including a file name extension), a
+   content format, and a CBOR tag for CDDL Definitions as specified in
+   [RFC8610].
+
+2.  IANA Considerations
+
+2.1.  Media Type
+
+   IANA is requested to add "application/cddl" as a new media type for
+   CDDL Definitions to the "Media Types" registry [IANA.media-types] in
+   the Standards Tree [RFC6838]:
+
+            +======+==================+=======================+
+            | Name | Template         | Reference             |
+            +======+==================+=======================+
+            | cddl | application/cddl | [RFC8610] and RFCthis |
+            +------+------------------+-----------------------+
+
+                          Table 1: CDDL Media Type
+
+   Type name:  application
+
+   Subtype name:  cddl
+
+   Required parameters:  N/A
+
+   Optional parameters:  N/A
+
+   Encoding considerations:  text
+
+   Security considerations:  See Security Considerations in RFC 8610.
+
+   Interoperability considerations:  N/A
+
+   Published specification:  RFCthis
+
+   Applications that use this media type:  Applications that need to
+      describe the structure of data in representation formats such as
+      CBOR and JSON.
+
+   Fragment identifier considerations:  N/A
+
+   Additional information:  Deprecated alias names for this type:i  N/A
+
+                            Magic number(s):  N/A
+
+                            File extension(s):  cddl
+
+                            Macintosh file type code(s):  N/A
+
+   Person/email address to contact for further information:  CBOR WG
+      mailing list (cbor@ietf.org)
+
+   Intended usage:  COMMON
+
+   Restriction on usage:  none
+
+   Author:  See Author's Addresses section
+
+   Change controller  IETF
+
+   Provisional registration:  no
+
+2.2.  CoAP Content Format
+
+   IANA is requested to assign a Content-Format ID for CDDL Definitions
+   in the "CoAP Content-Formats" registry, within the "Constrained
+   RESTful Environments (CoRE) Parameters" registry group
+   [IANA.core-parameters]:
+
+   +==================+================+======+=======================+
+   | Content-Type     | Content Coding | ID   | Reference             |
+   +==================+================+======+=======================+
+   | application/cddl | -              | TBD1 | [RFC8610] and RFCthis |
+   +------------------+----------------+------+-----------------------+
+
+                       Table 2: CDDL Content Format
+
+   If possible, TBD1 should be assigned in the 256...9999 range.
+
+2.3.  CBOR Tag
+
+   IANA is requested to allocate a tag for CDDL Definitions in the "CBOR
+   Tags" registry [IANA.cbor-tags], preferably with the specific value
+   requested:
+
+      +======+===========+=========================================+
+      | Tag  | Data Item | Semantics                               |
+      +======+===========+=========================================+
+      | 4344 | text      | CDDL Definition as defined in [RFC8610] |
+      +------+-----------+-----------------------------------------+
+
+                          Table 3: CDDL CBOR Tag
+
+3.  References
+
+3.1.  Normative References
+
+   [IANA.cbor-tags]
+              IANA, "Concise Binary Object Representation (CBOR) Tags",
+              <https://www.iana.org/assignments/cbor-tags>.
+
+   [IANA.core-parameters]
+              IANA, "Constrained RESTful Environments (CoRE)
+              Parameters",
+              <https://www.iana.org/assignments/core-parameters>.
+
+   [IANA.media-types]
+              IANA, "Media Types",
+              <https://www.iana.org/assignments/media-types>.
+
+   [RFC8610]  Birkholz, H., Vigano, C., and C. Bormann, "Concise Data
+              Definition Language (CDDL): A Notational Convention to
+              Express Concise Binary Object Representation (CBOR) and
+              JSON Data Structures", RFC 8610, DOI 10.17487/RFC8610,
+              June 2019, <https://www.rfc-editor.org/rfc/rfc8610>.
+
+3.2.  Informative References
+
+   [RFC6838]  Freed, N., Klensin, J., and T. Hansen, "Media Type
+              Specifications and Registration Procedures", BCP 13,
+              RFC 6838, DOI 10.17487/RFC6838, January 2013,
+              <https://www.rfc-editor.org/rfc/rfc6838>.
+
+Authors' Addresses
+
+   Barry Leiba
+   Futurewei Technologies
+   Email: barryleiba@computer.org
+   URI:   http://internetmessagingtechnology.org/
+
+
+   Henk Birkholz
+   Fraunhofer SIT
+   Rheinstrasse 75
+   64295 Darmstadt
+   Germany
+   Email: henk.birkholz@ietf.contact
