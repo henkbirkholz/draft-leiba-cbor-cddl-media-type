@@ -2,7 +2,7 @@
 
 
 
-COSE                                                            B. Leiba
+CBOR                                                            B. Leiba
 Internet-Draft                                    Futurewei Technologies
 Intended status: Standards Track                             H. Birkholz
 Expires: 14 June 2026                                     Fraunhofer SIT
