@@ -50,7 +50,7 @@ Correspondingly, this documents specifies a media type (including a file name ex
 # Introduction
 
 When the Concise Data Definition Language (CDDL) was defined, media-type, content-format, CBOR tag, and a file name extension were not defined for CDDL Definitions in {{RFC8610}}.
-Correspondingly, this documents specifies a media type (including a file name extension), a content format, and a CBOR tag for CDDL Definitions as specified in {{RFC8610}}.
+Correspondingly, this documents specifies a media type (including a file name extension) {{tbl-mt-reg}}, a content format {{tbl-cf-reg}}, and a CBOR tag {{tbl-tag-reg}} for CDDL Definitions as specified in {{RFC8610}}.
 
 # IANA Considerations
 
@@ -61,7 +61,7 @@ IANA is requested to add "application/cddl" as a new media type for CDDL Definit
 | Name | Template | Reference |
 |----- --|--------------------|---------------------------|
 | `cddl` | `application/cddl` | {{RFC8610}} and {{&SELF}} |
-{: #tab-mt-reg title="CDDL Media Type"}
+{: #tbl-mt-reg title="CDDL Media Type"}
 
 Type name:
 : application
@@ -141,6 +141,6 @@ IANA is requested to allocate a tag for CDDL Definitions in the "CBOR Tags" regi
 
 | Tag  | Data Item | Semantics |
 | 4344 | text | CDDL Definition as defined in {{RFC8610}} |
-{: #tbl-cbor-tag title="CDDL CBOR Tag"}
+{: #tbl-tag-reg title="CDDL CBOR Tag"}
 
 --- back
