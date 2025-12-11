@@ -118,7 +118,7 @@ Restriction on usage:
 Author:
 : See Author's Addresses section
 
-Change controller
+Change controller:
 : IETF
 
 Provisional registration:
