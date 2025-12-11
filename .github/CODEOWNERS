@@ -1,0 +1,3 @@
+# Automatically generated CODEOWNERS
+# Regenerate with `make update-codeowners`
+draft-leiba-cbor-cddl-media-type.md barryleiba@computer.org henk.birkholz@ietf.contact
