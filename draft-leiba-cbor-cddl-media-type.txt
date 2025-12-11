@@ -135,7 +135,7 @@ Table of Contents
 
    Author:  See Author's Addresses section
 
-   Change controller  IETF
+   Change controller:  IETF
 
    Provisional registration:  no
 
