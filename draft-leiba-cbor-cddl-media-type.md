@@ -61,7 +61,7 @@ IANA is requested to add "application/cddl" as a new media type for CDDL Definit
 | Name | Template | Reference |
 |----- --|--------------------|---------------------------|
 | `cddl` | `application/cddl` | {{RFC8610}} and {{&SELF}} |
-{: #tbl-mt-reg title="CDDL Media Type"}
+{: #tbl-mt-reg title="CDDL Definition Media Type"}
 
 Type name:
 : application
@@ -94,7 +94,7 @@ Fragment identifier considerations:
 : N/A
 
 Additional information:
-: Deprecated alias names for this type:i
+: Deprecated alias names for this type:
   :  N/A
 
   Magic number(s):
@@ -131,7 +131,7 @@ IANA is requested to assign a Content-Format ID for CDDL Definitions in the "CoA
 | Content-Type | Content Coding | ID | Reference |
 |------------------|---|------|---------------------------|
 | application/cddl | - | TBD1 | {{RFC8610}} and {{&SELF}} |
-{: #tbl-cf-reg title="CDDL Content Format"}
+{: #tbl-cf-reg title="CDDL Definition Content Format"}
 
 If possible, TBD1 should be assigned in the 256...9999 range.
 
@@ -141,6 +141,6 @@ IANA is requested to allocate a tag for CDDL Definitions in the "CBOR Tags" regi
 
 | Tag  | Data Item | Semantics |
 | 4344 | text | CDDL Definition as defined in {{RFC8610}} |
-{: #tbl-tag-reg title="CDDL CBOR Tag"}
+{: #tbl-tag-reg title="CDDL Definition CBOR Tag"}
 
 --- back
