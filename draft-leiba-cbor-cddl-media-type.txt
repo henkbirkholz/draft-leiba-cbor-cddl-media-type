@@ -5,8 +5,8 @@
 CBOR                                                            B. Leiba
 Internet-Draft                                    Futurewei Technologies
 Intended status: Standards Track                             H. Birkholz
-Expires: 14 June 2026                                     Fraunhofer SIT
-                                                        11 December 2025
+Expires: 15 June 2026                                     Fraunhofer SIT
+                                                        12 December 2025
 
 
    IANA Registrations for the Concise Data Definition Language (CDDL)
@@ -43,7 +43,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 14 June 2026.
+   This Internet-Draft will expire on 15 June 2026.
 
 Copyright Notice
 
@@ -94,7 +94,7 @@ Table of Contents
             | cddl | application/cddl | [RFC8610] and RFCthis |
             +------+------------------+-----------------------+
 
-                          Table 1: CDDL Media Type
+                    Table 1: CDDL Definition Media Type
 
    Type name:  application
 
@@ -118,7 +118,7 @@ Table of Contents
 
    Fragment identifier considerations:  N/A
 
-   Additional information:  Deprecated alias names for this type:i  N/A
+   Additional information:  Deprecated alias names for this type:  N/A
 
                             Magic number(s):  N/A
 
@@ -152,7 +152,7 @@ Table of Contents
    | application/cddl | -              | TBD1 | [RFC8610] and RFCthis |
    +------------------+----------------+------+-----------------------+
 
-                       Table 2: CDDL Content Format
+                 Table 2: CDDL Definition Content Format
 
    If possible, TBD1 should be assigned in the 256...9999 range.
 
@@ -168,7 +168,7 @@ Table of Contents
       | 4344 | text      | CDDL Definition as defined in [RFC8610] |
       +------+-----------+-----------------------------------------+
 
-                          Table 3: CDDL CBOR Tag
+                    Table 3: CDDL Definition CBOR Tag
 
 3.  References
 
